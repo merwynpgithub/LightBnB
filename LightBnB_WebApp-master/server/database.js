@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 const properties = require('./json/properties.json');
 const users = require('./json/users.json');
 
-//Connection
+// Create Connection
 const pool = new Pool({
   user: 'labber',
   password: 'labber',
@@ -116,7 +116,6 @@ const getAllReservations = function (guest_id, limit = 10) {
   `;
   return pool.query(queryString, [guest_id, limit])
     .then((result) => {
-      // console.log(result.rows);
       return result.rows;
     })
     .catch((err) => {
@@ -142,7 +141,9 @@ const getAllProperties = function (options, limit = 10) {
   }
   return Promise.resolve(limitedProperties);
   */
- /*
+
+   /* 
+   //Testing database functions
   const queryString = `
   SELECT title, description, thumbnail_photo_url, cost_per_night, number_of_bedrooms, number_of_bathrooms, parking_spaces
   FROM properties
