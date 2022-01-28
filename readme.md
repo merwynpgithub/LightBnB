@@ -1,6 +1,6 @@
 # Lightbnb Project
 
-XXXXXX
+Create a database of properties, owners and property reviews and use server-side JavaScript to display the information from queries to web pages
 
 ## Getting Started
 
