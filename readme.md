@@ -9,6 +9,12 @@ Create a database of properties, owners and property reviews and use server-side
 3. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:3000/>.
 4. Go to <http://localhost:3000/> in your browser.
+5. Creating and loading a database might be required as per below steps:
+- `cd ..` to go back to the folder LightBnB
+- Run `psql` in your terminal
+- `CREATE DATABASE lightbnb;`
+- `\i seeds/05_seeds.sql;`
+
 
 ## ERD Diagram for Lightbnb PostgreSQL Database
 ![ERD](images/Lightbnb_ERD.png)
